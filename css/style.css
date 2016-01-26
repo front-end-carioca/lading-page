@@ -1,0 +1,169 @@
+/* setting to Fonts */
+
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('../font/proximanova-light.eot');
+    src: url('../font/proximanova-light.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-light.woff2') format('woff2'),
+         url('../font/proximanova-light.woff') format('woff'),
+         url('../font/proximanova-light.ttf') format('truetype'),
+         url('../font/proximanova-light.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../font/proximanova-bold.eot');
+    src: url('../font/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-bold.woff2') format('woff2'),
+         url('../font/proximanova-bold.woff') format('woff'),
+         url('../font/proximanova-bold.ttf') format('truetype'),
+         url('../font/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novaextrabold';
+    src: url('../font/proximanova-extrabold.eot');
+    src: url('../font/proximanova-extrabold.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-extrabold.woff2') format('woff2'),
+         url('../font/proximanova-extrabold.woff') format('woff'),
+         url('../font/proximanova-extrabold.ttf') format('truetype'),
+         url('../font/proximanova-extrabold.svg#proxima_novaextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_novasemibold';
+    src: url('../font/proximanova-semibold.eot');
+    src: url('../font/proximanova-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../font/proximanova-semibold.woff2') format('woff2'),
+         url('../font/proximanova-semibold.woff') format('woff'),
+         url('../font/proximanova-semibold.ttf') format('truetype'),
+         url('../font/proximanova-semibold.svg#proxima_novasemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Style CSS */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	width: 100%;
+    background-image: url(../img/fec_background.png);
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	background-position:center;
+	overflow-x:hidden;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.content {
+	width: 980px;
+	margin: 75px auto 0 auto;
+	padding: 10px;
+}
+.logotipo {
+	background-image: url(../img/fec_logo.png);
+	width: 380px;
+	height: 301px;
+	display: block;
+	text-indent: -9999px;
+	margin: auto;
+}
+h1 {
+	font-family: 'proxima_nova_rgbold';
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+	margin-top: 60px;
+}
+h2 {
+	font-family: 'proxima_novalight';
+	font-size: 30px;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	margin-top: 10px;
+}
+#bottons {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+}
+#bottons a {
+	color: #fddfb0;
+	font-family: 'proxima_novasemibold';
+	text-decoration: none;
+	width: 300px;
+	padding: 20px 10px;
+	display: inline-block;
+	background-color: #fdaf31;
+	font-size: 24px;
+	box-shadow: 0px 5px 1px #6c4b15;
+	text-transform: uppercase;
+	text-align: center;
+}
+#bottons a:nth-child(1){
+	margin-right: 20px;
+}
+#bottons a:hover {
+	opacity: 0.93;
+}
+
+/******** Responsive *******/
+
+@media (min-width: 768px){
+	.content {
+		width: 100%;
+	}
+}
+@media (min-width: 680px) and (max-width: 767px) {
+	.content {
+		width: 100%;
+	}
+}
+@media (min-width: 480px) and (max-width: 679px) {
+	.content, #bottons a {
+		width: 95%;
+	}
+	#bottons a:nth-child(1){
+		margin-right: 0;
+	}
+	#bottons a:nth-child(2){
+		margin-top: 15px;
+	}
+}
+@media (min-width: 300px) and (max-width: 479px) {
+	.content, #bottons a {
+		width: 93%;
+	}
+	#bottons a:nth-child(1){
+		margin-right: 0;
+	}
+	#bottons a:nth-child(2){
+		margin-top: 15px;
+	}
+	h1{
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 23px;	
+	}
+	.logotipo {
+		background-image: url(../img/fec_logo_mobile.png);
+		width: 290px;
+		height: 230px;
+	}
+}
+
+
+/*
+@media (min-width: 320px) and (max-width: 379px) {}
+*/
