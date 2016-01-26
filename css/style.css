@@ -82,15 +82,18 @@ h1 {
 	font-size: 48px;
 	text-align: center;
 	color: #fff;
-	margin-top: 60px;
+	margin-top: 55px;
 }
-h2 {
+p {
 	font-family: 'proxima_novalight';
 	font-size: 30px;
 	text-align: center;
 	color: #fff;
 	font-weight: normal;
 	margin-top: 10px;
+}
+p span {
+	color: #fdaf31;
 }
 #bottons {
 	display: block;
@@ -119,7 +122,7 @@ h2 {
 
 /******** Responsive *******/
 
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 979px){
 	.content {
 		width: 100%;
 	}
